@@ -41,14 +41,22 @@ It was discovered that several drivers were refueling at **unauthorized depots**
 ---
 
 ### 🟨 MEASURE / DATA UNDERSTANDING
-Data sources were collected from multiple operational systems and profiled to confirm consistency and completeness.
+Data sources were collected from multiple operational systems and assessed for completeness, consistency, and quality.
 
-**Key Inputs**
-- **Fuel transactions:** Depot name, driver, vehicle, volume, price, timestamp  
-- **Trip data:** Trip ID, route, depot allocation, driver assignment  
-- **Operational units:** Region, depot ownership type, target fuel rate  
+**Key Steps Performed**
+- **Data Profiling in Power Query (Query M):**  
+  Used **Column Profile**, **Column Distribution**, and **Column Quality** tools to assess the `FuelFilling_Fact` table.  
+  This included identifying **blank values**, **outliers**, and **data inconsistencies**.
+- **Data Quality Review:**  
+  Investigated missing driver names, inconsistent depot naming, and out-of-range price values to identify data integrity issues.  
+- **Data Mapping:**  
+  Documented available columns across datasets to fully understand the structure and ensure all relevant data was accessible for analysis.
 
-**CRISP-DM Focus:** Initial data exploration and validation identified irregular depot naming and missing driver assignments.
+**Outcome:**  
+A validated understanding of data quality and content, ensuring the foundation for accurate and reliable modeling.
+
+**CRISP-DM Alignment:**  
+This aligns with the **Data Understanding** phase, where data quality, structure, and anomalies are explored to shape the next step — **Data Preparation**.
 
 ---
 
