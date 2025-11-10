@@ -41,7 +41,7 @@ It was discovered that several drivers were refueling at **unauthorized depots**
 ---
 
 ### 🟨 MEASURE / DATA UNDERSTANDING
-Data sources were collected from multiple operational systems and assessed for completeness, consistency, and quality.
+The data available in the current data structure was analysed in detail.
 
 **Key Steps Performed**
 - **Data Profiling in Power Query (Query M):**  
