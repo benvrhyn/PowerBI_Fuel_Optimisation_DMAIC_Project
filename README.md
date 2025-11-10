@@ -1,8 +1,15 @@
 # ⛽ Fuel Efficiency Optimization Dashboard – Power BI DMAIC Case Study
 
 ### 🎯 Objective
-This project focuses on reducing operational fuel costs by identifying and preventing non-compliant refueling practices across a logistics fleet.  
-Using **Power BI**, **DAX**, and the **DMAIC (Define–Measure–Analyze–Improve–Control)** methodology, this dashboard provides actionable insights that enable data-driven decisions and cost savings.
+This project demonstrates a structured approach to solving business challenges in Power BI by applying a **hybrid methodology** that combines **DMAIC (Define–Measure–Analyze–Improve–Control)** and **CRISP-DM** frameworks.
+
+The aim is to use **continuous improvement techniques** within data analysis to:
+- Clearly define the problem through stakeholder engagement.  
+- Translate client requirements into measurable KPIs.  
+- Structure data modeling, DAX, and Power Query transformations within a process-improvement mindset.
+
+The case study focuses on **reducing operational fuel costs** by identifying and preventing **non-compliant refueling practices** across a logistics fleet.  
+It also provides **insights into driver behavior**, **simulated cost savings** based on historical fuel patterns, and **story-driven visuals** that move beyond reporting to drive decision-making.
 
 ---
 
