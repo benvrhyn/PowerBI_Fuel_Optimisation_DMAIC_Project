@@ -130,9 +130,3 @@ To sustain improvements:
 
 ## 🧮 Sample DAX Measure
 ```DAX
-M_Unauthorized_Cost =
-SUMX(
-    FILTER(F_FuelIssueAllocation, F_FuelIssueAllocation[DepotAuthorized] = "No"),
-    (F_FuelIssueAllocation[PricePerLiter] - F_FuelIssueAllocation[BenchmarkRate]) *
-    F_FuelIssueAllocation[LitersFilled]
-)
