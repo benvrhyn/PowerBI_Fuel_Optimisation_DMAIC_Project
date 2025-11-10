@@ -1,4 +1,4 @@
-# ⛽ Fuel Efficiency Optimization Dashboard – Power BI DMAIC Case Study
+# ⛽ Fuel Efficiency Optimization Dashboard – Power BI DMAIC + CRISP-DM Case Study
 
 ### 🎯 Objective
 This project demonstrates a structured approach to solving business challenges in Power BI by applying a **hybrid methodology** that combines two powerful frameworks:  
@@ -16,98 +16,115 @@ This hybrid approach ensures both **analytical structure** and **process discipl
 
 The case study focuses on **reducing operational fuel costs** by identifying and preventing **non-compliant refueling practices** across a logistics fleet.  
 It also provides **insights into driver behavior**, **simulated cost savings** based on historical fuel patterns, and **story-driven visuals** that move beyond reporting to drive decision-making.
+
 ---
 
 ## 🧩 Methodology: DMAIC + CRISP-DM Hybrid
 
-### 🟦 Define – Identify the Problem
+The project integrates the **DMAIC continuous-improvement cycle** with the **six CRISP-DM stages** of data analysis to ensure business understanding, analytical rigor, and sustained process improvement.
+
+---
+
+### 🟦 DEFINE / BUSINESS UNDERSTANDING
 Operations reported a growing cost discrepancy between planned and actual fuel expenditure.  
-Upon investigation, it was discovered that several drivers were refueling at **unauthorized depots** where the **price per liter** was significantly higher than the company’s owned or preferred depots.  
+It was discovered that several drivers were refueling at **unauthorized depots** where the **price per liter** was significantly higher than the company’s preferred network.
 
-- **Business impact:**  
-  - Fuel price variance up to **$0.50 per liter**.  
-  - Average fill volume per truck: ~800 liters.  
-  - Potential excess cost per fill: **≈ $400**.  
-  - With multiple fills per day across the fleet, this represented a **substantial avoidable expense**.
+- **Business Impact**  
+  - Fuel price variance up to **$0.50 per liter**  
+  - Average fill volume per truck: ~800 L  
+  - Potential excess cost per fill: **≈ $400**  
+  - With multiple fills per day, this represented a **substantial avoidable expense**
 
-- **Goal:**  
-  Develop a **Power BI dashboard** that identifies where and when unauthorized fuel fills occur, quantifies the financial impact, and enables operations to enforce depot allocation compliance.
-
----
-
-### 🟨 Measure – Collect and Prepare the Data
-Data sources were collected from multiple operational systems and standardized for analysis:
-- **Fuel transactions:** Depot name, location, driver name, vehicle registration, fuel volume, price per liter, date/time.  
-- **Trip data:** TripId, route, depot allocation, driver assignment.  
-- **Operational unit data:** Region, depot ownership type, and target fuel rate.
-
-Data preparation was completed in **Power Query**, where transformations included:
-- Standardizing depot names and codes.  
-- Merging transaction and trip tables on driver and date.  
-- Creating calculated columns for authorized vs unauthorized depot fills.  
-- Establishing KPIs for:
-  - Fuel price variance per fill.  
-  - Fuel cost per km.  
-  - Total savings opportunity if compliant.
+- **Goal**  
+  Develop a **Power BI dashboard** that identifies where and when unauthorized fuel fills occur, quantifies financial impact, and enables operations to enforce depot-allocation compliance.
 
 ---
 
-### 🟧 Analyze – Find the Root Cause
-Using DAX measures and Power BI visuals, several analytical layers were created:
+### 🟨 MEASURE / DATA UNDERSTANDING
+Data sources were collected from multiple operational systems and profiled to confirm consistency and completeness.
 
-**1. Depot Cost Analysis**  
-- Average fuel price per depot.  
-- Comparison of owned vs non-owned depots.  
-- Identification of high-cost depots used by unauthorized drivers.
+**Key Inputs**
+- **Fuel transactions:** Depot name, driver, vehicle, volume, price, timestamp  
+- **Trip data:** Trip ID, route, depot allocation, driver assignment  
+- **Operational units:** Region, depot ownership type, target fuel rate  
 
-**2. Driver Compliance Analysis**  
-- % of fills at unauthorized depots per driver.  
-- Total avoidable cost by driver and vehicle.  
-- Trend over time to see if awareness or interventions reduced the issue.
-
-**3. Regional/Operational Trends**  
-- Map visual to identify depot hotspots.  
-- Breakdown of cost variance per operational unit.
-
-> 📊 Insight Example:  
-> 18% of total fills occurred at unauthorized depots, resulting in an estimated monthly overspend of ~$23,000.
+**CRISP-DM Focus:** Initial data exploration and validation identified irregular depot naming and missing driver assignments.
 
 ---
 
-### 🟩 Improve – Implement and Track Corrective Actions
-Based on the analysis, several operational interventions were implemented:
-- Restricted fuel card access to **approved depots only**.  
-- Introduced **driver training** and accountability measures.  
-- Created a **weekly Power BI alert report** sent to fleet managers highlighting non-compliance.  
-- Recommended **central depot refueling** planning for long-haul trips.
+### 🟧 ANALYZE / DATA PREPARATION & MODELING
+Data was standardized and modeled for analysis using Power Query (M) and DAX.
 
-> 🧠 Operational outcome:  
-> Within 2 months, unauthorized depot usage dropped by 72%, saving an estimated **R350,000+ per month**.
+**Transformations**
+- Standardized depot codes and merged transaction tables  
+- Calculated authorized vs unauthorized depot fills  
+- Built KPIs for:
+  - Fuel price variance per fill  
+  - Fuel cost per km  
+  - Savings opportunity if compliant  
+
+**Analytical Layers**
+1. **Depot Cost Analysis** – Owned vs non-owned depot pricing  
+2. **Driver Compliance** – % unauthorized fills per driver  
+3. **Regional Trends** – Map visuals to identify cost hotspots  
+
+> **Insight Example:**  
+> 18 % of total fills occurred at unauthorized depots → estimated monthly overspend ≈ $23 000.
 
 ---
 
-### 🟥 Control – Sustain the Improvement
-To ensure ongoing control:
-- The Power BI dashboard remains live and refreshes daily from the operational database.  
-- Alerts and KPIs are monitored weekly by the control tower.  
-- Continuous monitoring dashboards were built to highlight recurring patterns and identify any regressions.
+### 🟩 IMPROVE / EVALUATION & DEPLOYMENT
+Based on insights, several interventions were implemented:
 
-> **Control KPIs:**
-> - % of fills at unauthorized depots (target < 5%)  
-> - Average fuel price per liter vs benchmark depot  
-> - Monthly savings trend  
+- Restricted fuel-card access to **approved depots only**  
+- Introduced **driver training and accountability** programs  
+- Automated **weekly Power BI alert reports** for fleet managers  
+- Planned **central depot refueling** for long-haul routes  
+
+> **Operational Outcome:**  
+> Within two months, unauthorized depot usage dropped by 72 %, saving an estimated **R 350 000 per month**
+
+---
+
+### 🟥 CONTROL / MONITORING & CONTINUOUS IMPROVEMENT
+To sustain improvements:
+- The Power BI dashboard refreshes daily from the operational database  
+- Alerts and KPIs are reviewed weekly by the control tower  
+- Continuous-monitoring visuals flag any regressions in compliance  
+
+**Control KPIs**
+- % of fills at unauthorized depots (target < 5 %)  
+- Average fuel price vs benchmark depot  
+- Monthly savings trend  
+
+---
+
+## ⚙️ CRISP-DM STAGES SUMMARY
+| CRISP-DM Stage | Description | Project Application |
+|----------------|-------------|---------------------|
+| **1. Business Understanding** | Define objectives and success criteria | Quantify cost savings and improve compliance |
+| **2. Data Understanding** | Collect and explore data | Combined fuel, trip, and depot datasets |
+| **3. Data Preparation** | Clean and transform data | Power Query transformations for modeling |
+| **4. Modeling** | Apply analytical logic | DAX measures for cost variance & savings simulation |
+| **5. Evaluation** | Verify insights with stakeholders | Tested KPIs for operational accuracy |
+| **6. Deployment** | Deliver and monitor solution | Published Power BI dashboards with automated refresh and alerts |
 
 ---
 
 ## 🛠 Tools and Techniques
-- **Power BI Desktop** – Data modeling, visualization, KPI dashboards  
-- **DAX** – Variance, scoring, and compliance metrics  
-- **Power Query (M Language)** – Data transformation and merging  
-- **Excel** – Initial validation and historical comparison  
-- **DMAIC & CRISP-DM** – Framework for structured continuous improvement  
+- **Power BI Desktop** – Data modeling & visualization  
+- **DAX** – Compliance, variance & savings measures  
+- **Power Query (M)** – Data cleaning & transformation  
+- **Excel** – Initial validation & comparison  
+- **DMAIC + CRISP-DM** – Structured analytical framework  
 
 ---
 
-## 🧮 Sample DAX Measures
-
-**1. Fuel Price Variance**
+## 🧮 Sample DAX Measure
+```DAX
+M_Unauthorized_Cost =
+SUMX(
+    FILTER(F_FuelIssueAllocation, F_FuelIssueAllocation[DepotAuthorized] = "No"),
+    (F_FuelIssueAllocation[PricePerLiter] - F_FuelIssueAllocation[BenchmarkRate]) *
+    F_FuelIssueAllocation[LitersFilled]
+)
