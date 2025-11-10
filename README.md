@@ -1,7 +1,7 @@
 # ⛽ Fuel Efficiency Optimization Dashboard – Power BI DMAIC Case Study
 
 ### 🎯 Objective
-This project demonstrates a structured approach to solving business challenges in Power BI by applying a **hybrid methodology** that combines **DMAIC (Define–Measure–Analyze–Improve–Control)** and **CRISP-DM** frameworks.
+This project demonstrates a structured approach to solving business challenges in Power BI by applying a **hybrid methodology** that combines **DMAIC (Define–Measure–Analyze–Improve–Control)** and **CRISP-DM (Cross Industry Standard Process for Data Mining)** frameworks.
 
 The aim is to use **continuous improvement techniques** within data analysis to:
 - Clearly define the problem through stakeholder engagement.  
