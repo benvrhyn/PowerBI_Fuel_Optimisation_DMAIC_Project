@@ -1,16 +1,21 @@
 # ⛽ Fuel Efficiency Optimization Dashboard – Power BI DMAIC Case Study
 
 ### 🎯 Objective
-This project demonstrates a structured approach to solving business challenges in Power BI by applying a **hybrid methodology** that combines **DMAIC (Define–Measure–Analyze–Improve–Control)** and **CRISP-DM (Cross Industry Standard Process for Data Mining)** frameworks.
+This project demonstrates a structured approach to solving business challenges in Power BI by applying a **hybrid methodology** that combines two powerful frameworks:  
+- **DMAIC (Define – Measure – Analyze – Improve – Control)** from Continuous Improvement  
+- **CRISP-DM (Business Understanding – Data Understanding – Data Preparation – Modeling – Evaluation – Deployment)** from Data Science and Data Mining  
 
-The aim is to use **continuous improvement techniques** within data analysis to:
-- Clearly define the problem through stakeholder engagement.  
-- Translate client requirements into measurable KPIs.  
-- Structure data modeling, DAX, and Power Query transformations within a process-improvement mindset.
+The aim is to use **continuous improvement principles** within **data analytics** to:
+- Clearly define the business problem and stakeholder needs (**Define / Business Understanding**)  
+- Measure and understand key data sources (**Measure / Data Understanding**)  
+- Analyze and model data to uncover inefficiencies (**Analyze / Data Preparation & Modeling**)  
+- Implement and evaluate operational improvements (**Improve / Evaluation**)  
+- Deploy and sustain data-driven monitoring processes (**Control / Deployment**)  
+
+This hybrid approach ensures both **analytical structure** and **process discipline**, turning business data into actionable insights.  
 
 The case study focuses on **reducing operational fuel costs** by identifying and preventing **non-compliant refueling practices** across a logistics fleet.  
 It also provides **insights into driver behavior**, **simulated cost savings** based on historical fuel patterns, and **story-driven visuals** that move beyond reporting to drive decision-making.
-
 ---
 
 ## 🧩 Methodology: DMAIC + CRISP-DM Hybrid
