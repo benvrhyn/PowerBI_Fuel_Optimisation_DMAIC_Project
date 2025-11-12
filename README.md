@@ -129,6 +129,9 @@ To sustain improvements:
 ---
 
 ## 🧮 Sample DAX Measure
-```DAX
-![Dashboard Overview](images/1.%20Savings%20Summary.png)
+
+```markdown
+![Dashboard Overview](images/1.Savings_Summary.png)
+```
+
 
