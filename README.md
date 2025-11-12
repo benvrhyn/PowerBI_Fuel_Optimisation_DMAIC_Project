@@ -130,3 +130,4 @@ To sustain improvements:
 
 ## 🧮 Sample DAX Measure
 ```DAX
+![Dashboard Overview](images/dashboard_overview.png)
