@@ -130,8 +130,8 @@ To sustain improvements:
 
 ## 🧮 Sample DAX Measure
 
-```markdown
+
 ![Dashboard Overview](images/1.Savings_Summary.png)
-```
+
 
 
