@@ -132,6 +132,10 @@ To sustain improvements:
 
 
 ![Dashboard Overview](images/1.Savings_Summary.png)
+![Dashboard Overview](images/2.Savings_Summary.png)
+![Dashboard Overview](images/3.Sites_Summary_Rework.png)
+![Dashboard Overview](images/4.Driver_&_Fleet_Summary_Rework.png)
+
 
 
 
