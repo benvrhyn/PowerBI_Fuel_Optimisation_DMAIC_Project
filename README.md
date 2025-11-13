@@ -72,34 +72,35 @@ Data was analyzed to ensure readiness for insight generation and root cause expl
 - **Data Mapping:**  
   Documented available columns across datasets to fully understand the structure and ensure all relevant data was accessible for analysis.
 
-** Continuous Improvement Actions (Measure)**  
+**Continuous Improvement Actions (Measure)**  
 
 - Established data-driven KPIs to monitor ongoing fuel efficiency and cost variance.
 - Created an automated Power BI baseline report that measures pre-improvement performance.
 - Introduced data quality checks in Power Query to ensure clean inputs for process evaluation.
-- Designed an alert system to automatically flag outlier fills (e.g., >$0.50 above depot rate).
-- 
+
+  
 ---
 
 ### ANALYZE / DATA PREPARATION & MODELING
-Data was standardized and modeled for analysis using Power Query (M) and DAX.
+Data was standardized, cleansed, and modeled to uncover root causes of high fuel costs and non-compliance.
 
-**Transformations**
-- Standardized depot codes and merged transaction tables  
-- Calculated authorized vs unauthorized depot fills  
+**Data Transformations**
+- Standardized depot codes and merged transaction tables.
+- Calculated authorized vs unauthorized depot fills.
+- Added calculated columns to distinguish authorized vs unauthorized depots.  
 - Built KPIs for:
   - Fuel price variance per fill  
-  - Fuel cost per km  
-  - Savings opportunity if compliant  
-
-**Analytical Layers**
-1. **Depot Cost Analysis** – Owned vs non-owned depot pricing  
-2. **Driver Compliance** – % unauthorized fills per driver  
-3. **Regional Trends** – Map visuals to identify cost hotspots  
+  - Simulated vs actual savings rate
 
 > **Insight Example:**  
 > 18 % of total fills occurred at unauthorized depots → estimated monthly overspend ≈ $23 000.
 
+**Continuous Improvement Actions (Analyze)**
+
+- Conducted root cause analysis to identify top non-compliant drivers and depots.
+- Used “5 Whys” with operations to trace the reasons for non-compliant fills (e.g., proximity, convenience, or card restrictions).
+- Designed scenario modeling DAX measures to simulate cost outcomes under 100% compliance.
+- Implemented Q&A interactivity for stakeholders to query root causes dynamically (e.g., “Which depot caused the highest variance this quarter?”).
 ---
 
 ### IMPROVE / EVALUATION & DEPLOYMENT
