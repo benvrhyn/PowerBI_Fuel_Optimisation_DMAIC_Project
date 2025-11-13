@@ -252,7 +252,7 @@ AVERAGEX(
 
 **Highlights:**
 - Demonstrates the **interactive filter panel**, which allows users to dynamically adjust views.
-- The panel utilizes **buttons combined with bookmarks**, providing a seamless and intuitive filtering experience without requiring users to open the default Power BI filter pane.  
+- The panel utilizes **buttons combined with bookmarks**, providing a seamless and intuitive filtering experience.
 - This feature enhances **dashboard interactivity** and supports **guided analysis** for operations managers.
 
 ---
