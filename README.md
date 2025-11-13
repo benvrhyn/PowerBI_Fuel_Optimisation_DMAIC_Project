@@ -193,7 +193,7 @@ AVERAGEX(
 ## DATA MODEL (STAR SCHEMA)
 ![Dashboard Overview](images/5.ER_Diagram.png)
 
-**Fact Table: **
+**Fact Table:**
 
 - Fuel_Fact – fuel fill details, cost, volume
 
