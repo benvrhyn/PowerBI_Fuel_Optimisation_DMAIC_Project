@@ -128,9 +128,8 @@ To sustain improvements:
 
 ---
 ## 🧮 KEY DAX MEASURES
-
+Actual fuel cost after project implementation
 ```DAX
-// Actual fuel cost after project implementation
 M_Current_ActualCost = 
 SUMX(
     FILTER(
@@ -140,8 +139,8 @@ SUMX(
     Fuel_Fact[Total Cost]  
 )
 ```
+Calculates what the current actual cost would have been if the historic savings rate was applied to the current fuek filling behaviour
 ```DAX
-// Calculates what the current actual cost would have been if the historic savings rate was applied to the current fuek filling behaviour
 M_SimulatedTotalCost = 
 ([M_Current_ActualCost]/(1-([M_Historic_SavingsRate]-[M_Current_SavingsRate])))
 ```
