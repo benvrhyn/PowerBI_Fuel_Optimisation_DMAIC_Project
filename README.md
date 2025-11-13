@@ -132,7 +132,13 @@ To sustain improvements:
 
 
 ![Dashboard Overview](images/1.Savings_Summary.png)
+explain explain explain
+- **Power BI Desktop** – Data modeling & visualization  
+- **DAX** – Compliance, variance & savings measures  
+- **Power Query (M)** – Data cleaning & transformation 
 ![Dashboard Overview](images/2.Savings_Summary.png)
+
+Explain explain filter
 ![Dashboard Overview](images/3.Site_Summary.png)
 ![Dashboard Overview](images/4.Fleet_Summary.png)
 
