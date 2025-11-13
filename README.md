@@ -106,13 +106,13 @@ Data was standardized, cleansed, and modeled to uncover root causes of high fuel
 ### IMPROVE / EVALUATION & DEPLOYMENT
 Based on insights, several interventions were implemented:
 
-- Restricted fuel-card access to **approved depots only**  
-- Introduced **driver training and accountability** programs  
-- Automated **weekly Power BI alert reports** for fleet managers  
-- Planned **central depot refueling** for long-haul routes  
+- Implemented a new external online fuel ordering portal that eliminates the need for fuel cards.
+- Introduced **driver training and accountability** programs. 
+- Automated **weekly Power BI alert reports** for fleet managers. 
+- Planned **central depot refueling** for long-haul routes.
 
 > **Operational Outcome:**  
-> Within two months, unauthorized depot usage dropped by 72 %, saving an estimated **R 350 000 per month**
+> Within two months, unauthorized depot usage dropped by 72 %, saving an estimated **$323 681 over 6 months**
 
 ---
 
@@ -126,17 +126,18 @@ To sustain improvements:
 - % of fills at unauthorized depots (target < 5 %)  
 - Average fuel price vs benchmark depot  
 - Monthly savings trend  
-
+> **Operational Outcome:**  
+> Continuous visibility ensures long-term sustainability and operational discipline.
 ---
 
 ## ⚙️ CRISP-DM STAGES SUMMARY
 | CRISP-DM Stage | Description | Project Application |
 |----------------|-------------|---------------------|
-| **1. Business Understanding** | Define objectives and success criteria | Quantify cost savings and improve compliance |
-| **2. Data Understanding** | Collect and explore data | Combined fuel, trip, and depot datasets |
+| **1. Business Understanding** | Define objectives and success criteria | Reduce unauthorized refueling and improve compliance |
+| **2. Data Understanding** | Collect and explore data | Analyze fuel, driver, and vendor tables |
 | **3. Data Preparation** | Clean and transform data | Power Query transformations for modeling |
 | **4. Modeling** | Apply analytical logic | DAX measures for cost variance & savings simulation |
-| **5. Evaluation** | Verify insights with stakeholders | Tested KPIs for operational accuracy |
+| **5. Evaluation** | Verify insights with stakeholders | Operational test and accuracy verification |
 | **6. Deployment** | Deliver and monitor solution | Published Power BI dashboards with automated refresh and alerts |
 
 ---
@@ -150,7 +151,8 @@ To sustain improvements:
 
 ---
 ## 🧮 KEY DAX MEASURES
-Actual fuel cost after project implementation.
+(Representative examples used in this dashboard)
+**Actual fuel cost after project implementation.**
 ```DAX
 M_Current_ActualCost = 
 SUMX(
@@ -161,17 +163,17 @@ SUMX(
     Fuel_Fact[Total Cost]  
 )
 ```
-Calculates what the current actual cost would have been if the historic savings rate was applied to the current fuek filling behaviour.
+**Calculates what the current actual cost would have been if the historic savings rate was applied to the current fuek filling behaviour.**
 ```DAX
 M_SimulatedTotalCost = 
 ([M_Current_ActualCost]/(1-([M_Historic_SavingsRate]-[M_Current_SavingsRate])))
 ```
-Compares the ideal cost (Depot filling cost) based on filling behavior and compares it with the actual cost to determine the savings rate.
+**Compares the ideal cost (Depot filling cost) based on filling behavior and compares it with the actual cost to determine the savings rate.**
 ```DAX
 M_Current_SavingsRate = 
 1 - (DIVIDE([M_Current_IdealCost], [M_Current_ActualCost]))
 ```
-Calculates what the current total cost would be if fuel was only filled in depots
+**Calculates what the current total cost would be if fuel was only filled in depots**
 ```DAX
 M_Current_IdealCost = 
 SUMX(
@@ -182,12 +184,12 @@ SUMX(
     Fuel_Fact[Fill_Liters] * [M_Current_DepotRate]
 )
 ```
-Compares the Historic ideal cost (Depot filling cost) based on filling behavior and compares it with the actual cost to determine the historic savings rate.
+**Compares the Historic ideal cost (Depot filling cost) based on filling behavior and compares it with the actual cost to determine the historic savings rate.**
 ```DAX
 M_DS_Historic_SavingsRate = 
 1-(DIVIDE([M_Historic_IdealCost],[M_Historic_ActualCost]))
 ```
-Calculates what the Historic total cost would have beeen if fuel was only filled in depots, before that optimization project has kicked off.
+**Calculates what the Historic total cost would have beeen if fuel was only filled in depots, before that optimization project has kicked off.**
 ```DAX
 M_DS_Historic_IdealCost = 
 SUMX(
@@ -198,7 +200,7 @@ SUMX(
    Fuel_Fact[Fill_Liters] * [M_Historic_DepotRate]
 )
 ```
-Calculates what the Historic depot fuel pirce per liter was.
+**Calculates what the Historic depot fuel pirce per liter was.**
 ```DAX
 M_Historic_DepotRate = 
 AVERAGEX(
