@@ -53,6 +53,8 @@ Drivers should receive targeted training to increase compliance, and the initiat
 ---
 
 ### MEASURE / DATA UNDERSTANDING
+
+The current fuel order and filling process was mapped to set a baseline.
 The data available in the current data structure was analysed in detail.
 
 **Key Steps Performed**
