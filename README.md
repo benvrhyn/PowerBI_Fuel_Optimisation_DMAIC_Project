@@ -130,7 +130,7 @@ To sustain improvements:
 > Continuous visibility ensures long-term sustainability and operational discipline.
 ---
 
-## ⚙️ CRISP-DM STAGES SUMMARY
+## CRISP-DM STAGES SUMMARY
 | CRISP-DM Stage | Description | Project Application |
 |----------------|-------------|---------------------|
 | **1. Business Understanding** | Define objectives and success criteria | Reduce unauthorized refueling and improve compliance |
@@ -142,7 +142,7 @@ To sustain improvements:
 
 ---
 
-## 🛠 Tools and Techniques
+## Tools and Techniques
 - **Power BI Desktop** – Data modeling & visualization  
 - **DAX** – Compliance, variance & savings measures  
 - **Power Query (M)** – Data cleaning & transformation  
@@ -150,8 +150,9 @@ To sustain improvements:
 - **DMAIC + CRISP-DM** – Structured analytical framework  
 
 ---
-## 🧮 KEY DAX MEASURES
+## KEY DAX MEASURES
 (Representative examples used in this dashboard)
+
 **Actual fuel cost after project implementation.**
 ```DAX
 M_Current_ActualCost = 
