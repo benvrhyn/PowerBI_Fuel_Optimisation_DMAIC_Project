@@ -133,7 +133,7 @@ To sustain improvements:
 
 ![Dashboard Overview](images/1.Savings_Summary.png)
 ![Dashboard Overview](images/2.Savings_Summary.png)
-![Dashboard Overview](images/3.Sites_Summary.png)
+![Dashboard Overview](images/3.Site_Summary.png)
 ![Dashboard Overview](images/4.Fleet_Summary.png)
 
 
