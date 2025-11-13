@@ -1,6 +1,6 @@
-# ⛽ Fuel Efficiency Optimization Dashboard – Power BI DMAIC + CRISP-DM Case Study
+# Fuel Efficiency Optimization Dashboard – Power BI DMAIC + CRISP-DM Case Study
 
-### 🎯 Objective
+### Objective
 This project demonstrates a structured approach to solving business challenges in Power BI by applying a **hybrid methodology** that combines two powerful frameworks:  
 - **DMAIC (Define – Measure – Analyze – Improve – Control)** from Continuous Improvement  
 - **CRISP-DM (Business Understanding – Data Understanding – Data Preparation – Modeling – Evaluation – Deployment)** from Data Science and Data Mining  
@@ -19,13 +19,13 @@ It also provides **insights into driver behavior**, **simulated cost savings** b
 
 ---
 
-## 🧩 Methodology: DMAIC + CRISP-DM Hybrid
+## Methodology: DMAIC + CRISP-DM Hybrid
 
 The project integrates the **DMAIC continuous-improvement cycle** with the **six CRISP-DM stages** of data analysis to ensure business understanding, analytical rigor, and sustained process improvement.
 
 ---
 
-### 🟦 DEFINE / BUSINESS UNDERSTANDING
+### DEFINE / BUSINESS UNDERSTANDING
 Operations reported a growing cost discrepancy between planned and actual fuel expenditure.  
 It was discovered that several drivers were refueling at **unauthorized depots** where the **price per liter** was significantly higher than the company’s preferred network.
 
@@ -40,7 +40,7 @@ It was discovered that several drivers were refueling at **unauthorized depots**
 
 ---
 
-### 🟨 MEASURE / DATA UNDERSTANDING
+### MEASURE / DATA UNDERSTANDING
 The data available in the current data structure was analysed in detail.
 
 **Key Steps Performed**
@@ -60,7 +60,7 @@ This aligns with the **Data Understanding** phase, where data quality, structure
 
 ---
 
-### 🟧 ANALYZE / DATA PREPARATION & MODELING
+### ANALYZE / DATA PREPARATION & MODELING
 Data was standardized and modeled for analysis using Power Query (M) and DAX.
 
 **Transformations**
@@ -81,7 +81,7 @@ Data was standardized and modeled for analysis using Power Query (M) and DAX.
 
 ---
 
-### 🟩 IMPROVE / EVALUATION & DEPLOYMENT
+### IMPROVE / EVALUATION & DEPLOYMENT
 Based on insights, several interventions were implemented:
 
 - Restricted fuel-card access to **approved depots only**  
@@ -94,7 +94,7 @@ Based on insights, several interventions were implemented:
 
 ---
 
-### 🟥 CONTROL / MONITORING & CONTINUOUS IMPROVEMENT
+### CONTROL / MONITORING & CONTINUOUS IMPROVEMENT
 To sustain improvements:
 - The Power BI dashboard refreshes daily from the operational database  
 - Alerts and KPIs are reviewed weekly by the control tower  
@@ -128,7 +128,7 @@ To sustain improvements:
 
 ---
 
-## 🧮 Sample DAX Measure
+## Fuel Optimisation Report
 
 
 ![Dashboard Overview](images/1.Savings_Summary.png)
