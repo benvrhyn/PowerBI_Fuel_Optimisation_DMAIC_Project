@@ -49,7 +49,15 @@ It was discovered that several drivers were refueling at **unauthorized depots**
 **Goal**  
 Develop a Power BI dashboard that identifies where and when unauthorized fuel fills occur, quantifies the financial impact, and enables operations to enforce depot allocation compliance.
 Drivers should receive targeted training to increase compliance, and the initiative should be implemented company-wide, beginning 1 January 2025.
+**Continuous Improvement Actions (Define)**
 
+-Conducted stakeholder interviews to align on cost-saving objectives.
+
+-Defined operational KPIs — savings rate, compliance %, and unauthorized fill rate.
+
+-Set a baseline benchmark using historic fuel data (pre-implementation).
+
+-Defined measurable success: reduce unauthorized fills by 70% in three months.
 ---
 
 ### MEASURE / DATA UNDERSTANDING
