@@ -60,8 +60,8 @@ Drivers should receive targeted training to increase compliance, and the initiat
 
 ### MEASURE / DATA UNDERSTANDING
 
-The current fuel order and filling process was mapped to set a baseline.
-The data available in the current data structure was analysed in detail.
+The current fuel ordering and filling processes were mapped to establish a baseline for performance.
+Data was analyzed to ensure readiness for insight generation and root cause exploration.
 
 **Key Steps Performed**
 - **Data Profiling in Power Query (Query M):**  
@@ -72,12 +72,13 @@ The data available in the current data structure was analysed in detail.
 - **Data Mapping:**  
   Documented available columns across datasets to fully understand the structure and ensure all relevant data was accessible for analysis.
 
-**Outcome:**  
-A validated understanding of data quality and content, ensuring the foundation for accurate and reliable modeling.
+** Continuous Improvement Actions (Measure)**  
 
-**CRISP-DM Alignment:**  
-This aligns with the **Data Understanding** phase, where data quality, structure, and anomalies are explored to shape the next step — **Data Preparation**.
-
+- Established data-driven KPIs to monitor ongoing fuel efficiency and cost variance.
+- Created an automated Power BI baseline report that measures pre-improvement performance.
+- Introduced data quality checks in Power Query to ensure clean inputs for process evaluation.
+- Designed an alert system to automatically flag outlier fills (e.g., >$0.50 above depot rate).
+- 
 ---
 
 ### ANALYZE / DATA PREPARATION & MODELING
