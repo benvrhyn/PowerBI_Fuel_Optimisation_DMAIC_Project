@@ -174,7 +174,7 @@ M_SimulatedTotalCost =
 M_Current_SavingsRate = 
 1 - (DIVIDE([M_Current_IdealCost], [M_Current_ActualCost]))
 ```
-**Calculates what the current total cost would be if fuel was only filled in depots**
+**Calculates what the current total cost would be if fuel was only filled in depots.**
 ```DAX
 M_Current_IdealCost = 
 SUMX(
