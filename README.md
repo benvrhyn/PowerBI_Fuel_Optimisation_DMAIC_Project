@@ -40,13 +40,13 @@ It was discovered that several drivers were refueling at **unauthorized depots**
 - Outback Roadhouse 42
 
 
-- **Business Impact**  
+**Business Impact**  
   - Fuel price variance up to **$0.50 per liter**  
   - Average fill volume per truck: ~800 L  
   - Potential excess cost per fill: **≈ $400**  
   - With multiple fills per day, this represented a **substantial avoidable expense**
 
-- **Goal**  
+**Goal**  
 Develop a Power BI dashboard that identifies where and when unauthorized fuel fills occur, quantifies the financial impact, and enables operations to enforce depot allocation compliance.
 Drivers should receive targeted training to increase compliance, and the initiative should be implemented company-wide, beginning 1 January 2025.
 
