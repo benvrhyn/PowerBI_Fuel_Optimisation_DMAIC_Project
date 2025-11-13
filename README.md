@@ -233,9 +233,9 @@ AVERAGEX(
 - Trip_Dim – trip-level operational details
 
 ---
-##Report Walkthrough
+## Report Walkthrough
 
-###1. Savings Summary Overview
+### 1. Savings Summary Overview
 ![Dashboard Overview](images/1.Saving_Summary.png)
 
 **Highlights:**
@@ -247,7 +247,7 @@ AVERAGEX(
 
 ---
 
-###2. Filter Functionality
+### 2. Filter Functionality
 ![Dashboard Overview](images/2.Saving_Summary.png)
 
 **Highlights:**
@@ -257,7 +257,7 @@ AVERAGEX(
 
 ---
 
-###3. Site Summary
+### 3. Site Summary
 ![Dashboard Overview](images/3.Site_Summary.png)
 
 **Highlights:**
@@ -269,7 +269,7 @@ AVERAGEX(
 
 ---
 
-###4. Fleet Summary
+### 4. Fleet Summary
 ![Dashboard Overview](images/4.Fleet_Summary.png)
 
 **Highlights:**
