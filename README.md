@@ -139,17 +139,18 @@ SUMX(
     ),
     Fuel_Fact[Total Cost]  
 )
-
-
+```
+```DAX
 // Calculates what the current actual cost would have been if the historic savings rate was applied to the current fuek filling behaviour
 M_SimulatedTotalCost = 
 ([M_Current_ActualCost]/(1-([M_Historic_SavingsRate]-[M_Current_SavingsRate])))
-
-
+```
+```DAX
  // Compares the ideal cost (Depot filling cost) based on filling behavior and compares it with the actual cost to determine the savings rate
 M_Current_SavingsRate = 
 1 - (DIVIDE([M_Current_IdealCost], [M_Current_ActualCost]))
-
+```
+```DAX
 // Calculates what the current total cost would be if fuel was only filled in depots
 M_Current_IdealCost = 
 SUMX(
@@ -159,17 +160,14 @@ SUMX(
     ),
     Fuel_Fact[Fill_Liters] * [M_Current_DepotRate]
 )
-
-
-
-
+```
+```DAX
  // Compares the Historic ideal cost (Depot filling cost) based on filling behavior and compares it with the actual cost to determine the historic savings rate
 M_DS_Historic_SavingsRate = 
 1-(DIVIDE([M_Historic_IdealCost],[M_Historic_ActualCost]))
-
-
+```
+```DAX
 // Calculates what the Historic total cost would have beeen if fuel was only filled in depots, before that optimization project has kicked off.
-
 M_DS_Historic_IdealCost = 
 SUMX(
     FILTER(
@@ -178,10 +176,9 @@ SUMX(
     ),
    Fuel_Fact[Fill_Liters] * [M_Historic_DepotRate]
 )
-
-
+```
+```DAX
 // Calculates what the Historic depot fuel pirce per liter was
-
 M_Historic_DepotRate = 
 AVERAGEX(
     FILTER(
