@@ -226,7 +226,7 @@ AVERAGEX(
 ![Dashboard Overview](images/2.Saving_Summary.png)
 
 **Highlights:**
-- Demonstrates the **interactive filter panel**, which allows users to dynamically adjust views by depot type, driver, or vehicle.  
+- Demonstrates the **interactive filter panel**, which allows users to dynamically adjust views.
 - The panel utilizes **buttons combined with bookmarks**, providing a seamless and intuitive filtering experience without requiring users to open the default Power BI filter pane.  
 - This feature enhances **dashboard interactivity** and supports **guided analysis** for operations managers.
 
@@ -240,7 +240,7 @@ AVERAGEX(
 - Compares the **ideal (depot)**, **site**, and **actual cost per liter** over time, highlighting deviations from benchmark pricing.  
 - A detailed table lists **fuel site locations**, including total liters filled and total cost, enabling further investigation into specific high-cost or non-compliant sites.
 
-> 💡 *Example Insight:* “Depot ABC maintained an average price advantage of R0.42 per liter compared to external stations, resulting in a monthly saving potential of R58,000.”
+> 💡 *Example Insight:* “Depot ABC maintained an average price advantage of $0.42 per liter compared to external stations, resulting in a monthly saving potential of $58,000. ”
 
 ---
 
@@ -260,5 +260,11 @@ AVERAGEX(
 ---
 
 > ✨ *Overall, the dashboard moves beyond traditional reporting by blending data visualization, process improvement, and intelligent interactivity — empowering decision-makers to act on real-time insights with confidence.*
+---
 
+## 🔚 Closing Summary
+This project demonstrates how structured analytical thinking, guided by the **DMAIC** and **CRISP-DM** frameworks, can transform raw operational data into measurable business improvement.  
+Through Power BI’s modeling, automation, and visualization capabilities, complex refueling data was converted into **actionable insights** that reduced costs, improved compliance, and established a sustainable monitoring process.  
+
+The **Fuel Efficiency Optimization Dashboard** stands as a practical example of how data-driven continuous improvement can directly enhance **operational efficiency, accountability, and decision-making** within logistics.
 
