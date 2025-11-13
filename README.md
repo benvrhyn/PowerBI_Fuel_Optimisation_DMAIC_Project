@@ -127,29 +127,9 @@ To sustain improvements:
 - **DMAIC + CRISP-DM** – Structured analytical framework  
 
 ---
+## 🧮 KEY DAX MEASURES
 
-## Fuel Optimisation Report
-
-
-![Dashboard Overview](images/1.Saving_Summary.png)
-explain explain explain
-- **Power BI Desktop** – Data modeling & visualization  
-- **DAX** – Compliance, variance & savings measures  
-- **Power Query (M)** – Data cleaning & transformation
-
-![Dashboard Overview](images/2.Saving_Summary.png)
-Explain explain filter
-
-![Dashboard Overview](images/3.Site_Summary.png)
-
-![Dashboard Overview](images/4.Fleet_Summary.png)
-
-Dimensional Model Star Schema
-![Dashboard Overview](images/5.ER_Diagram.png)
-
-
-
-DAX---
+```DAX
 // Actual fuel cost after project implementation
 M_Current_ActualCost = 
 SUMX(
@@ -211,5 +191,52 @@ AVERAGEX(
     ),
     Fuel_Fact[Fill_Liters]
 )
+```
+> 💡 These formulas simulate what current costs would have been under ideal fueling behavior and quantify the impact of continuous improvement.
+---
+## DATA MODEL (STAR SCHEMA)
+![Dashboard Overview](images/5.ER_Diagram.png)
+
+**Fact Table: **
+
+- Fuel_Fact – fuel fill details, cost, volume
+
+**Dimensions:**
+
+- Vendor_Dim – fuel depot and supplier details
+
+- Driver_Dim – driver and vehicle mapping
+
+- Date_Dim – daily refresh and time intelligence support
+
+- Trip_Dim – trip-level operational details
+
+---
+## Report WALKTHROUGH
+### 1. Savings Summary Overview
+![Dashboard Overview](images/1.Saving_Summary.png)
+
+**Highlights:**
+
+- Displays total fuel cost vs simulated cost
+
+- Shows savings rate trend over time
+
+- Quantifies monetary value of improvement
+> 💡 Example Insight: “Current savings rate: 17.3%, representing R 350 000 monthly avoided cost.”
+
+### 2. Filter Functionality
+![Dashboard Overview](images/2.Saving_Summary.png)
+
+**Highlights:**
+
+- Indicates bookmark filter panel fucntionality.
+
+
+### 3. Site Summary
+![Dashboard Overview](images/3.Site_Summary.png)
+
+### 4. Fleet Summary
+![Dashboard Overview](images/4.Fleet_Summary.png)
 ---
 
