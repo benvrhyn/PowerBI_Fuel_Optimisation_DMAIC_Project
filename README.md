@@ -144,6 +144,8 @@ Explain explain filter
 
 ![Dashboard Overview](images/4.Fleet_Summary.png)
 
+![Dashboard Overview](images/5.ER_Diagram.png)
+
 
 
 
