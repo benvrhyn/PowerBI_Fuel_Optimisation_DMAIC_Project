@@ -208,31 +208,57 @@ AVERAGEX(
 - Trip_Dim – trip-level operational details
 
 ---
-## Report WALKTHROUGH
-### 1. Savings Summary Overview
+## 📊 Report Walkthrough
+
+### 1️⃣ Savings Summary Overview
 ![Dashboard Overview](images/1.Saving_Summary.png)
 
 **Highlights:**
+- Displays the **current diesel cost vs simulated diesel cost**, based on historic filling behavior, to determine the actual cost savings achieved.  
+- The **unrealized cost savings** represent potential savings still available where non-depot fills are taking place.  
+- The **target savings rate** is approximately **2.8%**.
 
-- Displays total fuel cost vs simulated cost
+> 💡 *Example Insight:* “Current avoided cost is **$54,323 per month**, and a total of **$323,681** has been saved since project inception.”
 
-- Shows savings rate trend over time
+---
 
-- Quantifies monetary value of improvement
-> 💡 Example Insight: “Current savings rate: 17.3%, representing R 350 000 monthly avoided cost.”
-
-### 2. Filter Functionality
+### 2️⃣ Filter Functionality
 ![Dashboard Overview](images/2.Saving_Summary.png)
 
 **Highlights:**
+- Demonstrates the **interactive filter panel**, which allows users to dynamically adjust views by depot type, driver, or vehicle.  
+- The panel utilizes **buttons combined with bookmarks**, providing a seamless and intuitive filtering experience without requiring users to open the default Power BI filter pane.  
+- This feature enhances **dashboard interactivity** and supports **guided analysis** for operations managers.
 
-- Indicates bookmark filter panel fucntionality.
+---
 
-
-### 3. Site Summary
+### 3️⃣ Site Summary
 ![Dashboard Overview](images/3.Site_Summary.png)
 
-### 4. Fleet Summary
-![Dashboard Overview](images/4.Fleet_Summary.png)
+**Highlights:**
+- Shows the **trend between depot and external site fills** — the upward trend reflects improved compliance and cost efficiency.  
+- Compares the **ideal (depot)**, **site**, and **actual cost per liter** over time, highlighting deviations from benchmark pricing.  
+- A detailed table lists **fuel site locations**, including total liters filled and total cost, enabling further investigation into specific high-cost or non-compliant sites.
+
+> 💡 *Example Insight:* “Depot ABC maintained an average price advantage of R0.42 per liter compared to external stations, resulting in a monthly saving potential of R58,000.”
+
 ---
+
+### 4️⃣ Fleet Summary
+![Dashboard Overview](images/4.Fleet_Summary.png)
+
+**Highlights:**
+- Illustrates the **trend of vehicles refueling at non-depot sites**, allowing for targeted compliance monitoring.  
+- Identifies **drivers and vehicles** consistently filling at non-depot sites — these insights guide **driver engagement and training initiatives**.  
+- Incorporates **Power BI’s Q&A feature**, enabling users to ask **natural language questions** such as:
+  > “Which driver had the highest non-depot fill cost last month?”  
+  or  
+  > “Show me savings trends by region over the last quarter.”
+
+  Power BI automatically generates relevant visuals in response, enhancing **self-service analytics** and making the dashboard more **interactive and insight-driven**.
+
+---
+
+> ✨ *Overall, the dashboard moves beyond traditional reporting by blending data visualization, process improvement, and intelligent interactivity — empowering decision-makers to act on real-time insights with confidence.*
+
 
