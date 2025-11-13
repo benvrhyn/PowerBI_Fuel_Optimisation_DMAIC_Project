@@ -164,7 +164,7 @@ SUMX(
     Fuel_Fact[Total Cost]  
 )
 ```
-**Calculates what the current actual cost would have been if the historic savings rate was applied to the current fuek filling behaviour.**
+**Calculates what the current actual cost would have been if the historic savings rate was applied to the current fuel filling behaviour.**
 ```DAX
 M_SimulatedTotalCost = 
 ([M_Current_ActualCost]/(1-([M_Historic_SavingsRate]-[M_Current_SavingsRate])))
