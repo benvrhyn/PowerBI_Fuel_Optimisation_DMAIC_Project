@@ -21,13 +21,24 @@ It also provides **insights into driver behavior**, **simulated cost savings** b
 
 ## Methodology: DMAIC + CRISP-DM Hybrid
 
-The project integrates the **DMAIC continuous-improvement cycle** with the **six CRISP-DM stages** of data analysis to ensure business understanding, analytical rigor, and sustained process improvement.
+The project integrates the **DMAIC continuous-improvement cycle** with the **six CRISP-DM stages** of data analysis to ensure business understanding and sustained process improvement.
 
 ---
 
 ### DEFINE / BUSINESS UNDERSTANDING
 Operations reported a growing cost discrepancy between planned and actual fuel expenditure.  
-It was discovered that several drivers were refueling at **unauthorized depots** where the **price per liter** was significantly higher than the company’s preferred network.
+It was discovered that several drivers were refueling at **unauthorized depots** where the **price per liter** was significantly higher than the company’s preferred network of the following fuel depots:
+
+- The Billabong Pitstop
+
+- Emu Plains Fuel & Go
+
+- Wombat Creek Service Centre
+
+- Coral Sea Marine Fuel
+
+- Outback Roadhouse 42
+
 
 - **Business Impact**  
   - Fuel price variance up to **$0.50 per liter**  
@@ -36,7 +47,8 @@ It was discovered that several drivers were refueling at **unauthorized depots**
   - With multiple fills per day, this represented a **substantial avoidable expense**
 
 - **Goal**  
-  Develop a **Power BI dashboard** that identifies where and when unauthorized fuel fills occur, quantifies financial impact, and enables operations to enforce depot-allocation compliance.
+Develop a Power BI dashboard that identifies where and when unauthorized fuel fills occur, quantifies the financial impact, and enables operations to enforce depot allocation compliance.
+Drivers should receive targeted training to increase compliance, and the initiative should be implemented company-wide, beginning 1 January 2025.
 
 ---
 
@@ -45,7 +57,7 @@ The data available in the current data structure was analysed in detail.
 
 **Key Steps Performed**
 - **Data Profiling in Power Query (Query M):**  
-  Used **Column Profile**, **Column Distribution**, and **Column Quality** tools to assess the `FuelFilling_Fact` table.  
+  Used **Column Profile**, **Column Distribution**, and **Column Quality** tools to assess the `Fuel_Fact` table.  
   This included identifying **blank values**, **outliers**, and **data inconsistencies**.
 - **Data Quality Review:**  
   Investigated missing driver names, inconsistent depot naming, and out-of-range price values to identify data integrity issues.  
@@ -208,9 +220,9 @@ AVERAGEX(
 - Trip_Dim – trip-level operational details
 
 ---
-## 📊 Report Walkthrough
+##Report Walkthrough
 
-### 1️⃣ Savings Summary Overview
+###1. Savings Summary Overview
 ![Dashboard Overview](images/1.Saving_Summary.png)
 
 **Highlights:**
@@ -222,7 +234,7 @@ AVERAGEX(
 
 ---
 
-### 2️⃣ Filter Functionality
+###2. Filter Functionality
 ![Dashboard Overview](images/2.Saving_Summary.png)
 
 **Highlights:**
@@ -232,7 +244,7 @@ AVERAGEX(
 
 ---
 
-### 3️⃣ Site Summary
+###3. Site Summary
 ![Dashboard Overview](images/3.Site_Summary.png)
 
 **Highlights:**
@@ -244,7 +256,7 @@ AVERAGEX(
 
 ---
 
-### 4️⃣ Fleet Summary
+###4. Fleet Summary
 ![Dashboard Overview](images/4.Fleet_Summary.png)
 
 **Highlights:**
@@ -259,12 +271,12 @@ AVERAGEX(
 
 ---
 
-> ✨ *Overall, the dashboard moves beyond traditional reporting by blending data visualization, process improvement, and intelligent interactivity — empowering decision-makers to act on real-time insights with confidence.*
+> *Overall, the dashboard moves beyond traditional reporting by blending data visualization, process improvement, and intelligent interactivity — empowering decision-makers to act on real-time insights with confidence.*
 ---
 
-## 🔚 Closing Summary
+## Closing Summary
 This project demonstrates how structured analytical thinking, guided by the **DMAIC** and **CRISP-DM** frameworks, can transform raw operational data into measurable business improvement.  
 Through Power BI’s modeling, automation, and visualization capabilities, complex refueling data was converted into **actionable insights** that reduced costs, improved compliance, and established a sustainable monitoring process.  
 
-The **Fuel Efficiency Optimization Dashboard** stands as a practical example of how data-driven continuous improvement can directly enhance **operational efficiency, accountability, and decision-making** within logistics.
+The **Fuel Efficiency Optimization Dashboard** stands as a practical example of how data-driven continuous improvement can directly enhance **operational efficiency, accountability, and decision-making** .
 
