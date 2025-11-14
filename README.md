@@ -17,8 +17,8 @@ This hybrid approach ensures both **analytical structure** and **process discipl
 The case study focuses on **reducing operational fuel costs** by identifying and preventing **non-compliant refueling practices** across a logistics fleet.  
 It also provides **insights into driver behavior**, **simulated cost savings** based on historical fuel patterns, and **story-driven visuals** that move beyond reporting to drive decision-making.
 
-**Note:** All data presented in this report is for demonstration purposes only. No real company names, sites, drivers, or vehicle registrations are used.
-The dataset has been carefully anonymized and designed to mimic a real-world logistics and fuel management project to demonstrate analytical and reporting capabilities within Power BI.
+>**Note:** All data presented in this report is for demonstration purposes only. No real company names, sites, drivers, or vehicle registrations are used.
+>The dataset has been carefully anonymized and designed to mimic a real-world logistics and fuel management project to demonstrate analytical and reporting capabilities within Power BI.
 
 ---
 
